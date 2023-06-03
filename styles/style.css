@@ -7,14 +7,14 @@ body {
     height: 100vh;
     width: 100vw;
 }
-
+.text{
+    user-select: none;
+}
 @font-face {
     font-family: "Westminster";
     src: url(../fonts/westminster.ttf);
 }
-.text{
-    user-select: none;
-}
+
 .fuentePersonal{
     font-family: "Westminster";
 }
@@ -35,13 +35,13 @@ body {
     height: 35em;
     width: 30em;
 }
-.brain{
+.logoCerebro{
     filter: drop-shadow(0px 0px 10px #FFFFFF);
     margin-bottom: 3em;
     height: 27em;
     transition: 1s;
 }
-.brain:hover{
+.logoCerebro:hover{
     filter: drop-shadow(0px 0px 35px #FFFFFF);
     transition: 1s;
 }
@@ -78,7 +78,7 @@ body {
 
 /* NAME.HTML STYLES */
 
-.container-name-cel {
+.containerCeldaNombre {
     position: relative;
     display: flex;
     align-items: center;
@@ -87,14 +87,14 @@ body {
     width: 30em;
     height: 30em;
 }
-.title-name {
+.tituloJugador {
     position: absolute;
     margin-bottom: 3.7em;
     filter: drop-shadow(0px 0px 9px #ffffff);
     color: #000000;
     font-size: 6em;
 }
-.name-cel {
+.inputNombre {
     box-shadow: 0px 0px 15px 0px rgba(255,255,255,1);
     width: 5em;
     height: 1em;
@@ -104,7 +104,7 @@ body {
     color: rgb(80, 80, 80);
     caret-color: rgb(255, 0, 64);
 }
-.names-button {
+.nombreBoton {
     position: absolute;
     font-size: 3.1em;
     border-radius: 0.2em;
@@ -114,11 +114,11 @@ body {
     transition: 1s;
     background-color: white;
 }
-.names-button:hover {
+.nombreBoton:hover {
     box-shadow: 0px 0px 30px 0px rgba(255,255,255,1);
     transition: 1s;
 }
-.names-button:active {
+.nombreBoton:active {
     transform: scale(1.06);
     transition: 1ms;
 }
@@ -126,16 +126,16 @@ body {
 /* NAME.HTML MEDIA QUERIES */
 
 @media screen and (max-width: 360px) {
-    .title-name {
+    .tituloJugador {
         margin-bottom: 3.5em;
         font-size: 4.5em;
     }
-    .name-cel {
+    .inputNombre {
         width: 5em;
         height: 1em;
         font-size: 2.9em;
     }
-    .names-button {
+    .nombreBoton {
         font-size: 2.5em;
         margin-top: 4.5em;
     }}
@@ -436,7 +436,6 @@ body {
     filter: url(../img/reloadroll.png);
     cursor: pointer;
 }
-
 .row {
     display: flex;
     align-items: center;
