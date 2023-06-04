@@ -33,10 +33,12 @@ body {
 /* INDEX.HTML STYLES*/
 
 .container-index {
-    position: relative;
+    display: flex;
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 80%;
 }
 .container-logo {
     display: flex;
@@ -56,7 +58,7 @@ body {
     filter: drop-shadow(0px 0px 35px #FFFFFF);
     transition: 1s;
 }
-.logo-name {
+.logoNombre {
     position: absolute;
     background-image: url(../img/logo-name.png);
     background-size: cover;
@@ -65,7 +67,24 @@ body {
     height: 10em;
     width: 30em;
 }
-
+.sobreElJuego {
+    align-items: center;
+    justify-content: center;
+    margin-top: 40%;
+    height: 6%;
+    width: 12%;
+}
+.instrucciones {
+    height: 100%;
+    width: 100%;
+    border-radius: 75%;
+    background-color: #00000000;
+    border: white solid 0.08em;
+    color: white;
+    font-family: "Westminster";
+    font-size: 180%;
+    cursor: pointer;
+}
 /* INDEX.HTML MEDIA QUERIES */
 
 @media screen and (max-width: 360px) {
@@ -73,19 +92,33 @@ body {
         height: 20em;
         width: 20em;
     }
-  
-    .brain {
+    .logoCerebro {
         margin: 0em;
         height: 15em;
         width: 15em;
     }
-
-    .logo-name {
+    .logoNombre {
         background-size: contain;
         margin-top: 22em;
-        height: 10em;
+        margin-left: 4.5em;
+        height: 6em;
         width: 20em;
-  }}
+    }
+    .sobreElJuego {
+        margin-top: 125%;
+        height: 10%;
+        width: 40%;
+    }
+    .instrucciones {
+        border-radius: 75%;
+        background-color: #00000000;
+        border: white solid 0.08em;
+        color: white;
+        font-family: "Westminster";
+        font-size: 130%;
+        cursor: pointer;
+    }
+}
 
 /* NAME.HTML STYLES */
 
@@ -273,7 +306,19 @@ body {
 
 /* COLORSELECT.HTML MEDIA QUERIES */
 @media screen and (max-width: 360px) {
-
+    .tituloColores{
+        font-size: 5em;
+    }
+    .containerBolasColores {
+        width: 30em;
+    }
+    .color {
+        width: 2.5em;
+        height: 2.5em;
+    }
+    .botonConfirmarColores {
+        font-size: 1.5em;
+    }
 }
 
 
@@ -461,7 +506,7 @@ body {
     }
 }
 
-/*   COMOSEJUEGA.HTML   */
+/*   COMOSEJUEGA.HTML STYLES  */
 
 .containerInstrucciones {
     display: flex;
@@ -499,9 +544,25 @@ body {
     height: 240%;
 }
 .margenInferior {
-    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     height: 10%;
 }
+.botonVolver {
+    border-radius: 75%;
+    background-color: #00000000;
+    border: none;
+    border: white solid 0.08em; 
+    color: white;
+    font-family: "Westminster";
+    font-size: 180%;
+    cursor: pointer;
+}
+
+/*   COMOSEJUEGA.HTML MEDIA QUERIES  */
+
 @media screen and (max-width: 360px) {
     .tituloInstrucciones {
         font-size: 350%;
@@ -516,11 +577,11 @@ body {
     .margenIzquierdo {
         width: 7.7%;
         margin-left: 3%;
-        height: 410%;
+        height: 430%;
     }
     .margenDerecho {
         width: 7.7%;
         margin-right: 3%;
-        height: 410%;
+        height: 430%;
     }
 }
