@@ -324,14 +324,8 @@ body {
 
 
 
-/* GAME.HTML STYLES */
-.containerJuego{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: 100vh;
-}
+/* JUEGO.HTML STYLES */
+
 .logoJuego {
     position: fixed;
     margin-top: 1em;
@@ -342,6 +336,13 @@ body {
     filter: drop-shadow(0px 0px 8px #FFFFFF);
     height: 6em;
     width: 6em;
+}
+.containerJuego {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
 }
 .tableroJugadasCompleto {
     height: 45em;
@@ -381,63 +382,20 @@ body {
     border: rgb(183, 183, 255) solid 0.25em;
     justify-content: space-between;
 }
-.check-column {
-    display: flex;
-    flex-direction: column-reverse;
-    height: 34.8em;
-    width: 7.7em;
-    border-top: rgb(183, 183, 255) solid 0.25em;
-    border-bottom: rgb(183, 183, 255) solid 0.25em;
-    border-right: rgb(183, 183, 255) solid 0.25em;
-}
-.check-cell, .check-cell01, .check-cell02, .check-cell03, .check-cell04, .check-cell05, .check-cell06, .check-cell07, .check-cell08, .check-cell09, .check-cell10 {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 3.48em;
-    width: 7.5em;
-    /* border-top: #fff solid 0.16em; */
+.filaJugada {
+    flex-direction: row;
+    background-color: #4CAF50;
+    height: 10%;
+    width: 100%;
     box-sizing: border-box;
+    border-top: solid 0.08em white;
 }
-.check-cell10 {
-    border: none;
-}
-.check, .check01, .check02, .check03, .check04 {
-    display: flex;
-    border-radius: 1em;
-    background-color: "";
-    height: 0.7rem;
-    width: 0.7rem;
-    border: #fff solid 0.16em;
-}
-.color-ball-history {
-    display: flex;
-    flex-direction: column-reverse;
-    height: 34.8em;
-    width: 22.3em;
-    border-top: rgb(183, 183, 255) solid 0.25em;
-    border-bottom: rgb(183, 183, 255) solid 0.25em;
-}
-.row-history, .row-history01, .row-history02, .row-history03, .row-history04, .row-history05, .row-history06, .row-history07, .row-history08, .row-history09, .row-history10 {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 3.48em;
-    width: 22.3em;
-    /* border-top: #fff solid 0.16em; */
-    box-sizing: border-box;
-} 
-.row-history10 {
-    border: none;
-}
-.history-ball, .history-ball01, .history-ball02, .history-ball03, .history-ball04 {
-    width: 2.7em;
-    height: 2.7em;
-    margin: -3em;
-    border-radius: 5em;
-    border: rgb(203, 203, 255) solid 0.16em;
-    box-sizing: border-box;
-}
+
+
+
+
+
+
 .filaEleccionColores {
     position: relative;
     display: flex;
@@ -465,9 +423,6 @@ body {
     box-sizing: border-box;
     cursor: pointer;
     background-color: "";
-}
-.hola {
-    background-color: rgb(255, 0, 0);
 }
 .botonBorrar {
     color: #fff;
