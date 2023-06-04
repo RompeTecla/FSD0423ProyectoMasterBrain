@@ -484,11 +484,13 @@ body {
 }
 .margenIzquierdo {
     background-image: url(../img/margenIzq.png);
+    background-repeat: repeat-y;
     height: 100%;
     width: 1.9%;
 }
 .margenDerecho {
     background-image: url(../img/margenDer.png);
+    background-repeat: repeat-y;
     height: 100%;
     width: 1.9%;
 }
