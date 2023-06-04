@@ -4,11 +4,11 @@ body {
     display: flex;
     align-content: center;
     justify-content: center;
-    /* justify-content: space-around; */
     height: 100vh;
     width: 100vw;
     scrollbar-width: hidden;
     overflow-x: hidden;
+    user-select: none;
 }
 
 .text{
@@ -459,7 +459,6 @@ body {
     .logoJuego {
         height: 4em;
     }
-    
 }
 
 /*   COMOSEJUEGA.HTML   */
@@ -486,18 +485,22 @@ body {
     font-family: "Mono";
 }
 .margenIzquierdo {
+    margin-left: 5%;
     background-image: url(../img/margenIzq.png);
     background-repeat: repeat-y;
-    height: 100%;
     width: 1.9%;
-    height: 100%;
+    height: 240%;
 }
 .margenDerecho {
+    margin-right: 5%;
     background-image: url(../img/margenDer.png);
     background-repeat: repeat-y;
-    height: 100%;
     width: 1.9%;
-    height: 150%;
+    height: 240%;
+}
+.margenInferior {
+    width: 90%;
+    height: 10%;
 }
 @media screen and (max-width: 360px) {
     .tituloInstrucciones {
@@ -512,8 +515,12 @@ body {
     }
     .margenIzquierdo {
         width: 7.7%;
+        margin-left: 3%;
+        height: 410%;
     }
     .margenDerecho {
         width: 7.7%;
+        margin-right: 3%;
+        height: 410%;
     }
 }
