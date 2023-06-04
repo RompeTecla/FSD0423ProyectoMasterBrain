@@ -346,7 +346,6 @@ body {
 }
 .tableroJugadasCompleto {
     height: 45em;
-    background-color: #4CAF50;
     filter: drop-shadow(0px 0px 8px #FFFFFF);
 }
 .filaCombinacionSecreta {
@@ -383,15 +382,57 @@ body {
     justify-content: space-between;
 }
 .filaJugada {
+    display: flex;
     flex-direction: row;
-    background-color: #4CAF50;
     height: 10%;
     width: 100%;
     box-sizing: border-box;
     border-top: solid 0.08em white;
 }
-
-
+.columnaConfirmacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 20%;
+}
+.columnaJugada {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-left: white solid 0.08em;
+    border-right: white solid 0.08em;
+    height: 100%;
+    width: 60%;
+}
+.bolaJugada {
+    border: #ffffff solid 0.08em;
+    box-sizing: border-box;
+    border-radius: 100%;
+    height: 75%;
+    width: 15%;
+    cursor: pointer;
+}
+.columnaComprobacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 20%;
+}
+.bolaComprobacion{
+    display: flex;
+    border: #ffffff solid 0.08em;
+    box-sizing: border-box;
+    border-radius: 100%;
+    height: 25%;
+    width: 14%;
+}
+.filaBloqueada {
+    user-select: none;
+    cursor: default;
+    background-image: url(../img/bloqueoDeFilas.png);
+}
 
 
 
@@ -415,7 +456,7 @@ body {
     justify-content: space-evenly;
     width: 21rem;
 }
-.color-select-ball, .color-select-ball01, .color-select-ball02, .color-select-ball03, .color-select-ball04, .color-select-ball05, .color-select-ball06 {
+.colorParaJugar {
     width: 3.5em;
     height: 3.5em;
     border-radius: 5em;
